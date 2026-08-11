@@ -1,8 +1,8 @@
 class Horndis < Formula
   desc "Entitlement-free Android RNDIS USB tethering for modern macOS"
   homepage "https://github.com/noahhhi/HoRNDIS-Userspace"
-  url "https://github.com/noahhhi/HoRNDIS-Userspace/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "92dcadabda2e9b7677c50d5824ba4ac56f8799989614c998b5c971982363a51f"
+  url "https://github.com/noahhhi/HoRNDIS-Userspace/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "87e6c44bf0daf1c3007cc04cf708da6a379ac8f3e0c413865610a9c4d4b3898c"
   license "GPL-3.0-or-later"
   head "https://github.com/noahhhi/HoRNDIS-Userspace.git", branch: "main"
 
