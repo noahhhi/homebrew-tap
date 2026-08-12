@@ -4,6 +4,7 @@ class Horndis < Formula
   url "https://github.com/noahhhi/HoRNDIS-Userspace/archive/refs/tags/v0.2.3.tar.gz"
   sha256 "b5b60b4375504cc2fc7b9a1c82ee60524861176a24fc63bc66eb71897c99f5b6"
   license "GPL-3.0-or-later"
+  revision 1
   head "https://github.com/noahhhi/HoRNDIS-Userspace.git", branch: "main"
 
   depends_on macos: :big_sur
