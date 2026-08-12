@@ -1,27 +1,29 @@
 # Noahhhi Homebrew Tap
 
-## How do I install these formulae?
-
-Install HoRNDIS Userspace directly:
+## Install HoRNDIS Userspace
 
 ```sh
-brew install noahhhi/tap/horndis
-sudo horndis service install
+brew install --cask noahhhi/tap/horndis
 ```
 
-The second command performs the one-time administrator-authorized service installation. Android USB tethering then reconnects automatically without disabling SIP or requesting Apple DriverKit entitlements.
+The Cask downloads the prebuilt universal `.pkg`; HoRNDIS does not compile
+locally. One standard Installer authorization installs `/Applications/HoRNDIS
+Status.app`, the `horndis` command, `man horndis`, and the persistent network
+service. Macs without Homebrew can use the identical release `.pkg` directly.
+
+If the menu app has been quit, reopen it from Applications or run:
+
+```sh
+horndis start
+```
 
 Project documentation and troubleshooting: [HoRNDIS Userspace](https://github.com/noahhhi/HoRNDIS-Userspace).
 
-For other formulae in this tap, use `brew install noahhhi/tap/<formula>`.
-
-Or `brew tap noahhhi/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
+For a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "noahhhi/tap"
-brew "<formula>"
+cask "horndis"
 ```
 
 ## Documentation
