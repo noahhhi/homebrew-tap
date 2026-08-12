@@ -11,6 +11,7 @@ class Horndis < Formula
   def install
     system "make", "VERSION=#{version}"
     system "make", "install", "PREFIX=#{prefix}", "VERSION=#{version}"
+    system "/usr/bin/codesign", "--force", "--deep", "--sign", "-", prefix/"HoRNDISStatus.app"
   end
 
   def caveats
@@ -33,5 +34,6 @@ class Horndis < Formula
     assert_predicate prefix/"HoRNDISStatus.app/Contents/MacOS/horndis-status", :executable?
     assert_predicate prefix/"HoRNDISStatus.app/Contents/Resources/horndis", :executable?
     assert_path_exists prefix/"HoRNDISStatus.app/Contents/Resources/HoRNDISStatus.icns"
+    system "/usr/bin/codesign", "--verify", "--deep", "--strict", prefix/"HoRNDISStatus.app"
   end
 end
