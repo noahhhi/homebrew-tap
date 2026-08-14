@@ -1,6 +1,6 @@
 cask "horndis" do
-  version "0.3.4"
-  sha256 "1a4a143a0a575f964ccf0d9781e463fe0f24a215bc52e9c6e847013315528a76"
+  version "0.3.5"
+  sha256 "528d459f3c7b73960d9b258b54e5ecceef48639ca64c1a0df204a6f7807df111"
 
   url "https://github.com/noahhhi/HoRNDIS-Userspace/releases/download/v#{version}/HoRNDIS-Userspace-v#{version}-macos-universal.pkg"
   name "HoRNDIS Userspace"
